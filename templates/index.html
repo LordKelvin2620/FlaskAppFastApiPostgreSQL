@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Mi Nombre es Kevin Martinez Franco</h1>
+        <p>Desarrollador Web Backend</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de Mí</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about">
+            <h2>Acerca de Mí</h2>
+            <p>¡Hola! Soy un desarrollador web apasionado por la tecnología...</p>
+        </section>
+
+        <section class="projects">
+            <h2>Proyectos Recientes</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1...</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: email@example.com</p>
+    </footer>
+
+    <script href="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
