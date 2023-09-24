@@ -15,7 +15,7 @@ class MovieModel():
 
                 for row in resultset:
                     movie=Movie(row[0],row[1],row[2],row[3])
-                    movie.append(movie)
+                    movies.append(movie.to_JSON())
             connection.close
             return movies
         except Exception as ex:
